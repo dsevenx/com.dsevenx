@@ -1,4 +1,4 @@
-package com.desvenx.hellosteffenrestservice;
+package com.dsevenx.hellosteffenrestservice;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -21,7 +21,7 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Got it! (Now in GIT)";
+        return "Got it! (Now in GIT) by dsevenx";
     }
     
     @Path("/sum")
