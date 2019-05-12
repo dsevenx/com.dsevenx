@@ -132,7 +132,7 @@ public class MyResource {
        	lD7XDB_TUserCreateIn.setDOMAIN("BUCHSTABENAPP");
        	lD7XDB_TUserCreateIn.setNAME(pName);
            	
-       	D7XDB_TUserCreateOut lD7XDB_TUserCreateOut = pRdsConnectionD7XDB.anlegenUser(lD7XDB_TUserCreateIn);
+       	D7XDB_TUserCreateOut lD7XDB_TUserCreateOut = pRdsConnectionD7XDB.createUser(lD7XDB_TUserCreateIn);
     	
        	pErg.append(D7XKonstanten.K_NEW_LINE+ "Anlegen USER :" + pName 
        	 		+ D7XKonstanten.K_NEW_LINE+ lD7XDB_TUserCreateOut.getD7XDB_Erg().getErgHinweis() + D7XKonstanten.K_NEW_LINE+ lD7XDB_TUserCreateOut.getID() + " " + lD7XDB_TUserCreateOut.getNAME());

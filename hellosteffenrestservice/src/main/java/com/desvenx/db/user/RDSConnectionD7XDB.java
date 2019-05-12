@@ -23,7 +23,7 @@ public class RDSConnectionD7XDB {
 	/**
 	 * USER nach Namenseingabe anlegen (nur bei APP-Start)
 	 */
-	public D7XDB_TUserCreateOut anlegenUser(D7XDB_TUserCreateIn pD7XDB_TUserCreateIn) {
+	public D7XDB_TUserCreateOut createUser(D7XDB_TUserCreateIn pD7XDB_TUserCreateIn) {
 		
 		D7XDB_TUserCreateOut lErg = new D7XDB_TUserCreateOut();
 
