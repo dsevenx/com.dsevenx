@@ -200,15 +200,15 @@ public class RDSConnectionD7XDB {
 			try {
 				ResultSet lResultSet = null;
 
-				if (pD7XDB_TUserHighScoreIn.getWELCHE().equals(D7XKonstanten.K_EINZEL)) {
+				if (pD7XDB_TUserHighScoreIn.getmWELCHE().equals(D7XKonstanten.K_EINZEL)) {
 					lResultSet = lStatement
 							.executeQuery("select * from D7XDB.TUSER order by HIGHSCORE_EINZEL desc LIMIT 100 OFFSET "
-									+ pD7XDB_TUserHighScoreIn.getOffset());
+									+ pD7XDB_TUserHighScoreIn.getmOffset());
 
 				} else {
 					lResultSet = lStatement.executeQuery(
 							"select * from D7XDB.TUSER order by HIGHSCORE_INSGESAMT desc LIMIT 100 OFFSET "
-									+ pD7XDB_TUserHighScoreIn.getOffset());
+									+ pD7XDB_TUserHighScoreIn.getmOffset());
 
 				}
 				D7XAllgFunktionen.log("lResultSet " + lResultSet);
@@ -219,13 +219,13 @@ public class RDSConnectionD7XDB {
 					D7XAllgFunktionen.log("found " + lResultSet);
 
 					int lHighScore = 0;
-					if (pD7XDB_TUserHighScoreIn.getWELCHE().equals(D7XKonstanten.K_EINZEL)) {
+					if (pD7XDB_TUserHighScoreIn.getmWELCHE().equals(D7XKonstanten.K_EINZEL)) {
 						lHighScore = lResultSet.getInt(D7XDB_TUserRow.K_HIGHSCORE_EINZEL);
 					} else {
 						lHighScore = lResultSet.getInt(D7XDB_TUserRow.K_HIGHSCORE_INSGESAMT);
 					}
 					String lHighScoreDatum = "";
-					if (pD7XDB_TUserHighScoreIn.getWELCHE().equals(D7XKonstanten.K_EINZEL)) {
+					if (pD7XDB_TUserHighScoreIn.getmWELCHE().equals(D7XKonstanten.K_EINZEL)) {
 						lHighScoreDatum = lResultSet.getString(D7XDB_TUserRow.K_HIGHSCORE_EINZEL_DATUM);
 					} else {
 						lHighScoreDatum = lResultSet.getString(D7XDB_TUserRow.K_HIGHSCORE_INSGESAMT_DATUM);

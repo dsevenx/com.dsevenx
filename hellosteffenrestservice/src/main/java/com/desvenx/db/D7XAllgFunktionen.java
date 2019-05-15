@@ -47,4 +47,8 @@ public abstract class D7XAllgFunktionen {
 		return " RC-Update :" + pResultSetUpdate;
 	}
 
+	public static int lieferInteger(String pPoffset) {
+		return Integer.parseInt(pPoffset);
+	}
+
 }

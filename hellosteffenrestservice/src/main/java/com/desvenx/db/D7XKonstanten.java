@@ -4,6 +4,11 @@ public class D7XKonstanten {
 
 	// public static final String K_URL =
 	// "jdbc:mysql://dsevenxclusteridserverless.cluster-cgfilwl2psrx.us-east-2.rds.amazonaws.com:3306/D7XDB";
+	public static final String K_URL = "jdbc:mysql://d7xmysql2.cgfilwl2psrx.us-east-2.rds.amazonaws.com:3306/D7XDB";
+
+	public static final String K_DB_NUTZER = "D7XMASTER";
+
+	public static final String K_DB_PASSWORT = "Sigrid2009$";
 
 
 	public static final String K_NOT_FOUND = "NOT FOUND";

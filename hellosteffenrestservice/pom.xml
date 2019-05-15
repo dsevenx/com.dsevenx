@@ -5,13 +5,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.dsevenx</groupId>
-	<artifactId>hellosteffenrestservice</artifactId>
-	<packaging>war</packaging>
+	<artifactId>D7XRestServiceTUser</artifactId>
+    <packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hellosteffenrestservice</name>
+	<name>D7XRestServiceTUser Name</name>
 
 	<build>
-		<finalName>hellosteffenrestservice</finalName>
+		<finalName>D7XRestServiceTUser</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
